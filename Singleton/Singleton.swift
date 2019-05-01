@@ -8,9 +8,10 @@
 import Foundation
 
 final class Singleton {
-
+    // MARK: - Singleton instance
     static let sharedInstance = Singleton()
 
+    // MARK: - Initialization
     private init() {
     }
 }
