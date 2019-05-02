@@ -63,3 +63,26 @@ Clients don't know whether they work with a target class directly or through an 
 See also the UML class diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/Adapter/Adapter_pattern.svg.png)
+
+## Decorator
+
+The Decorator design pattern is one of the twenty-three well-known GoF design patterns that describe how to solve recurring design problems to design flexible and reusable object-oriented software, that is, objects that are easier to implement, change, test, and reuse.
+
+What problems can the Decorator design pattern solve?
+
+* Responsibilities should be added to (and removed from) an object dynamically at run-time.
+* A flexible alternative to subclassing for extending functionality should be provided.
+
+When using subclassing, different subclasses extend a class in different ways. But an extension is bound to the class at compile-time and can't be changed at run-time.
+
+What solution does the Decorator design pattern describe?
+
+Define Decorator objects that
+
+* Implement the interface of the extended (decorated) object (Component) transparently by forwarding all requests to it.
+* Perform additional functionality before/after forwarding a request.
+This enables to work through different Decorator objects to extend the functionality of an object dynamically at run-time.
+
+See also the UML class and sequence diagram below.
+
+![](https://github.com/polurezov8/Patterns/blob/master/Decorator/DecoratorUML.png)
