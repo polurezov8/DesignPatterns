@@ -16,3 +16,11 @@ extension Copyable {
         return type(of: self).init(self)
     }
 }
+
+extension Array where Element: Copyable {
+    public func deepCopy() -> [Element] {
+        return map {
+            $0.copy()
+        }
+    }
+}
