@@ -110,3 +110,25 @@ This enables to work through a Facade object to minimize the dependencies on a s
 See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/Facade/facade.png)
+
+## Behavioral Patterns
+## Iterator
+
+The Iterator design pattern is one of the twenty-three well-known GoF design patterns that describe how to solve recurring design problems to design flexible and reusable object-oriented software, that is, objects that are easier to implement, change, test, and reuse.
+
+What problems can the Iterator design pattern solve?
+
+* The elements of an aggregate object should be accessed and traversed without exposing its representation (data structures).
+* New traversal operations should be defined for an aggregate object without changing its interface.
+Defining access and traversal operations in the aggregate interface is inflexible because it commits the aggregate to particular access and traversal operations and makes it impossible to add new operations later without having to change the aggregate interface.
+
+What solution does the Iterator design pattern describe?
+
+* Define a separate (iterator) object that encapsulates accessing and traversing an aggregate object.
+* Clients use an iterator to access and traverse an aggregate without knowing its representation (data structures).
+Different iterators can be used to access and traverse an aggregate in different ways. 
+New access and traversal operations can be defined independently by defining new iterators.
+
+See also the UML class and sequence diagram below.
+
+![](https://github.com/polurezov8/Patterns/blob/master/Iterator/Iterator.png)
