@@ -1,5 +1,6 @@
 # Patterns
 
+## Creation Patterns
 ## Prototype
 The prototype pattern is a creational design pattern in software development. It is used when the type of objects to create is determined by a prototypical instance, which is cloned to produce new objects. This pattern is used to:
 * Avoid subclasses of an object creator in the client application, like the factory method pattern does.
@@ -41,6 +42,7 @@ The abstract factory pattern provides a way to encapsulate a group of individual
 
 ![](https://github.com/polurezov8/Patterns/blob/master/AbstractFactory/abstractFactory.png)
 
+## Structural Patterns
 ## Adapter
 
 The adapter design pattern is one of the twenty-three well-known GoF design patterns that describe how to solve recurring design problems to design flexible and reusable object-oriented software, that is, objects that are easier to implement, change, test, and reuse.
