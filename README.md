@@ -34,7 +34,7 @@ This enables writing of subclasses to change the way an object is created (to re
 
 See also the UML class diagram below.
 
-![](https://github.com/polurezov8/Patterns/blob/master/FactoryMethod/FactoryMethodPattern.png)
+![](https://github.com/polurezov8/Patterns/blob/master/FactoryMethod/FactoryMethod.png)
 
 ## Abstract Factory
 
@@ -64,7 +64,7 @@ Clients don't know whether they work with a target class directly or through an 
 
 See also the UML class diagram below.
 
-![](https://github.com/polurezov8/Patterns/blob/master/Adapter/Adapter_pattern.svg.png)
+![](https://github.com/polurezov8/Patterns/blob/master/Adapter/Adapter.png)
 
 ## Decorator
 
@@ -87,7 +87,7 @@ This enables to work through different Decorator objects to extend the functiona
 
 See also the UML class and sequence diagram below.
 
-![](https://github.com/polurezov8/Patterns/blob/master/Decorator/DecoratorUML.png)
+![](https://github.com/polurezov8/Patterns/blob/master/Decorator/Decorator.png)
 
 ## Facade
 
