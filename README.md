@@ -1,23 +1,6 @@
 # Patterns
 
 ## Creation Patterns
-## Prototype
-The prototype pattern is a creational design pattern in software development. It is used when the type of objects to create is determined by a prototypical instance, which is cloned to produce new objects. This pattern is used to:
-* Avoid subclasses of an object creator in the client application, like the factory method pattern does.
-* Avoid the inherent cost of creating a new object in the standard way (e.g., using the 'new' keyword) when it is prohibitively expensive for a given application.
-
-To implement the pattern, declare an abstract base class that specifies a pure virtual clone() method. Any class that needs a "polymorphic constructor" capability derives itself from the abstract base class, and implements the clone() operation.
-The client, instead of writing code that invokes the "new" operator on a hard-coded class name, calls the clone() method on the prototype, calls a factory method with a parameter designating the particular concrete derived class desired, or invokes the clone() method through some mechanism provided by another design pattern.
-
-![](https://github.com/polurezov8/Patterns/blob/master/Prototype/Prototype.gif)
-
-## Singleton
-
-In software engineering, the singleton pattern is a software design pattern that restricts the instantiation of a class to one "single" instance. This is useful when exactly one object is needed to coordinate actions across the system. The term comes from the mathematical concept of a singleton.
-Critics consider the singleton to be an anti-pattern in that it is frequently used in scenarios where it is not beneficial, introduces unnecessary restrictions in situations where a sole instance of a class is not actually required, and introduces global state into an application.
-
-![](https://github.com/polurezov8/Patterns/blob/master/Singleton/Singleton.png)
-
 ## Factory Method
 
 The Factory Method design pattern is one of the twenty-three well-known "Gang of Four" design patterns that describe how to solve recurring design problems to design flexible and reusable object-oriented software, that is, objects that are easier to implement, change, test, and reuse.
@@ -41,6 +24,29 @@ See also the UML class diagram below.
 The abstract factory pattern provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes. In normal usage, the client software creates a concrete implementation of the abstract factory and then uses the generic interface of the factory to create the concrete objects that are part of the theme. The client doesn't know (or care) which concrete objects it gets from each of these internal factories, since it uses only the generic interfaces of their products. This pattern separates the details of implementation of a set of objects from their general usage and relies on object composition, as object creation is implemented in methods exposed in the factory interface.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/AbstractFactory/abstractFactory.png)
+
+## Builder
+
+The builder pattern is a design pattern designed to provide a flexible solution to various object creation problems in object-oriented programming. The intent of the Builder design pattern is to separate the construction of a complex object from its representation.
+
+![](https://github.com/polurezov8/Patterns/blob/master/Builder/Builder.png)
+
+## Prototype
+The prototype pattern is a creational design pattern in software development. It is used when the type of objects to create is determined by a prototypical instance, which is cloned to produce new objects. This pattern is used to:
+* Avoid subclasses of an object creator in the client application, like the factory method pattern does.
+* Avoid the inherent cost of creating a new object in the standard way (e.g., using the 'new' keyword) when it is prohibitively expensive for a given application.
+
+To implement the pattern, declare an abstract base class that specifies a pure virtual clone() method. Any class that needs a "polymorphic constructor" capability derives itself from the abstract base class, and implements the clone() operation.
+The client, instead of writing code that invokes the "new" operator on a hard-coded class name, calls the clone() method on the prototype, calls a factory method with a parameter designating the particular concrete derived class desired, or invokes the clone() method through some mechanism provided by another design pattern.
+
+![](https://github.com/polurezov8/Patterns/blob/master/Prototype/Prototype.gif)
+
+## Singleton
+
+In software engineering, the singleton pattern is a software design pattern that restricts the instantiation of a class to one "single" instance. This is useful when exactly one object is needed to coordinate actions across the system. The term comes from the mathematical concept of a singleton.
+Critics consider the singleton to be an anti-pattern in that it is frequently used in scenarios where it is not beneficial, introduces unnecessary restrictions in situations where a sole instance of a class is not actually required, and introduces global state into an application.
+
+![](https://github.com/polurezov8/Patterns/blob/master/Singleton/Singleton.png)
 
 ## Structural Patterns
 ## Adapter
@@ -105,7 +111,7 @@ Define a Facade object that:
 
 * Implements a simple interface in terms of (by delegating to) the interfaces in the subsystem.
 * May perform additional functionality before/after forwarding a request.
-This enables to work through a Facade object to minimize the dependencies on a subsystem. 
+This enables to work through a Facade object to minimize the dependencies on a subsystem.
 
 See also the UML class and sequence diagram below.
 
@@ -126,7 +132,7 @@ What solution does the Iterator design pattern describe?
 
 * Define a separate (iterator) object that encapsulates accessing and traversing an aggregate object.
 * Clients use an iterator to access and traverse an aggregate without knowing its representation (data structures).
-Different iterators can be used to access and traverse an aggregate in different ways. 
+Different iterators can be used to access and traverse an aggregate in different ways.
 New access and traversal operations can be defined independently by defining new iterators.
 
 See also the UML class and sequence diagram below.
