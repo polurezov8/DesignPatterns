@@ -2,7 +2,7 @@
 //  Copyable.swift
 //  
 //
-//  Created by Dmitriy Poluriezov on 5/1/19.
+//  Created by Dmitriy Poluriezov on 9/2/20.
 //
 
 import UIKit
@@ -19,8 +19,6 @@ extension Copyable {
 
 extension Array where Element: Copyable {
     public func deepCopy() -> [Element] {
-        return map {
-            $0.copy()
-        }
+        return map { $0.copy() }
     }
 }
