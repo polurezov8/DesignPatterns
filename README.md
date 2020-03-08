@@ -92,22 +92,13 @@ See also the UML class diagram below.
 
 ## Decorator
 
-The Decorator design pattern is one of the twenty-three well-known GoF design patterns that describe how to solve recurring design problems to design flexible and reusable object-oriented software, that is, objects that are easier to implement, change, test, and reuse.
+The decorator pattern allows the behavior of individual objects to be changed without requiring changes to the classes that are used to create them or the components that consume them.
 
-What problems can the Decorator design pattern solve?
+The changes in behavior defined with the decorator pattern can be combined to create complex effects without needing to create large numbers of subclasses.
 
-* Responsibilities should be added to (and removed from) an object dynamically at run-time.
-* A flexible alternative to subclassing for extending functionality should be provided.
+Use this pattern when you need to change the behavior of objects without changing the class they are created from or the components that use them.
 
-When using subclassing, different subclasses extend a class in different ways. But an extension is bound to the class at compile-time and can't be changed at run-time.
-
-What solution does the Decorator design pattern describe?
-
-Define Decorator objects that
-
-* Implement the interface of the extended (decorated) object (Component) transparently by forwarding all requests to it.
-* Perform additional functionality before/after forwarding a request.
-This enables to work through different Decorator objects to extend the functionality of an object dynamically at run-time.
+Don''t use this pattern when you are able to change the class that creates the objects you want to modify. It is usually simpler and easier to modify the class directly.
 
 See also the UML class and sequence diagram below.
 
