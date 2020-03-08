@@ -80,6 +80,16 @@ When a class varies often, the features of object-oriented programming become ve
 See also the UML class diagram below.
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Bridge/Bridge.png)
 
+## Composite
+The composite pattern allows a tree of individual objects and collections of objects to be treated consistently.
+The consistency that the composite pattern brings means that components that operate on the tree structure are simpler and do not need to have knowledge of the different objects types that are in use.
+
+Use this pattern when you have a tree structure that contains leaf nodes and collections of objects.
+This pattern is applicable only to tree data structures.
+
+See also the UML class diagram below.
+![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Composite/Composite.png)
+
 ## Decorator
 
 The Decorator design pattern is one of the twenty-three well-known GoF design patterns that describe how to solve recurring design problems to design flexible and reusable object-oriented software, that is, objects that are easier to implement, change, test, and reuse.

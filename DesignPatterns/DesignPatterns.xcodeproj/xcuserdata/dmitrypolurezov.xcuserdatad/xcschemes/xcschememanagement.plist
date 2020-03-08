@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>Composite.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>FactoryMethod.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -73,6 +78,11 @@
 			<true/>
 		</dict>
 		<key>BEB3CF1D240C365B00BB86B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BEC1B82624150F4E00413092</key>
 		<dict>
 			<key>primary</key>
 			<true/>
