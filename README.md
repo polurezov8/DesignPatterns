@@ -102,7 +102,7 @@ Don''t use this pattern when you are able to change the class that creates the o
 
 See also the UML class and sequence diagram below.
 
-![](https://github.com/polurezov8/Patterns/blob/master/Decorator/Decorator.png)
+![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Decorator/Decorator.png)
 
 ## Facade
 
