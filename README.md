@@ -3,17 +3,14 @@
 ## Creation Patterns
 ## Factory Method
 
-The Factory Method design pattern is one of the twenty-three well-known "Gang of Four" design patterns that describe how to solve recurring design problems to design flexible and reusable object-oriented software, that is, objects that are easier to implement, change, test, and reuse.
+What is it? 
+* The factory method pattern selects an implementation class to satisfy a calling component’s request without requiring the component to know anything about the implementation classes or the way they relate to one another.
 
-The Factory Method design pattern solves problems like:
-* How can an object be created so that subclasses can redefine which class to instantiate?
-* How can a class defer instantiation to subclasses?
-Creating an object directly within the class that requires (uses) the object is inflexible because it commits the class to a particular object and makes it impossible to change the instantiation independently from (without having to change) the class.
+What are the benefits? 
+* This pattern consolidates the logic that decides which implementation class is selected and prevents it from being diffused throughout the application. This also means that calling components rely only on the top-level protocol or base class and do not need any knowledge about the implementation classes or the process by which they are selected.
 
-The Factory Method design pattern describes how to solve such problems:
-Define a separate operation (factory method) for creating an object.
-Create an object by calling a factory method.
-This enables writing of subclasses to change the way an object is created (to redefine which class to instantiate).
+When should you use this pattern? 
+* Use this pattern when you have several classes that implement a common protocol or that are derived from the same base class.
 
 See also the UML class diagram below.
 
@@ -21,7 +18,14 @@ See also the UML class diagram below.
 
 ## Abstract Factory
 
-The abstract factory pattern provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes. In normal usage, the client software creates a concrete implementation of the abstract factory and then uses the generic interface of the factory to create the concrete objects that are part of the theme. The client doesn't know (or care) which concrete objects it gets from each of these internal factories, since it uses only the generic interfaces of their products. This pattern separates the details of implementation of a set of objects from their general usage and relies on object composition, as object creation is implemented in methods exposed in the factory interface.
+What is it? 
+* The abstract factory pattern allows a calling component to create a group of related objects. The pattern hides the details of which classes are used to create the objects and the reason why they were selected from the calling component.
+
+What are the benefits? 
+* The calling component doesn’t know which classes are used to create the objects or why they were selected, which makes it possible to change the classes that are used without needing to change the components that consume them.
+
+When should you use this pattern? 
+* Use this pattern when you need to ensure that multiple compatible objects are used by a calling component without the component needing to know which objects are able to work together.
 
 See also the UML class diagram below.
 
