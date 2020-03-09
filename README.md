@@ -37,11 +37,14 @@ See also the UML class diagram below.
 
 ## Prototype
 
-* What is it? \nThe prototype pattern creates new objects by copying an existing object, known as the prototype.
+What is it? 
+* The prototype pattern creates new objects by copying an existing object, known as the prototype.
 
-* What are the benefits? \nThe main benefit is to hide the code that creates objects from the components that use them; this means that components don’t need to know which class or struct is required to create a new object, don’t need to know the details of initializers, and don’t need to change when subclasses are created and instantiated. This pattern can also be used to avoid repeating expensive initialization each time a new object of a specific type is created.
+What are the benefits? 
+* The main benefit is to hide the code that creates objects from the components that use them; this means that components don’t need to know which class or struct is required to create a new object, don’t need to know the details of initializers, and don’t need to change when subclasses are created and instantiated. This pattern can also be used to avoid repeating expensive initialization each time a new object of a specific type is created.
 
-* When should you use this pattern? \nThis pattern is useful when you are writing a component that needs to create new instances of objects without creating a dependency on the class initializer.
+When should you use this pattern? 
+* This pattern is useful when you are writing a component that needs to create new instances of objects without creating a dependency on the class initializer.
 
 See also the UML class diagram below.
 
@@ -49,11 +52,14 @@ See also the UML class diagram below.
 
 ## Singleton
 
-* What is it? \nThe singleton pattern ensures that only one object of a given type exists in the application.
+What is it? 
+* The singleton pattern ensures that only one object of a given type exists in the application.
 
-* What are the benefits? \nThe singleton pattern can be used to manage objects that represent real-world resources or to encapsulate a shared resource.
+What are the benefits? 
+* The singleton pattern can be used to manage objects that represent real-world resources or to encapsulate a shared resource.
 
-* When should you use this pattern? \nThe singleton pattern should be used when creating further objects doesn’t increase the number of real-world resources available or when you want to consolidate an activity such as logging.
+When should you use this pattern? 
+* The singleton pattern should be used when creating further objects doesn’t increase the number of real-world resources available or when you want to consolidate an activity such as logging.
 
 See also the UML class diagram below.
 
