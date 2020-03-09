@@ -7,12 +7,12 @@ import XCTest
 
 /// Класс Одиночка предоставляет поле `shared`, которое позволяет клиентам
 /// получать доступ к уникальному экземпляру одиночки.
-class Singleton {
+final class Singleton {
 
     /// Статическое поле, управляющие доступом к экземпляру одиночки.
     /// Эта реализация позволяет вам расширять класс Одиночки, сохраняя повсюду
     /// только один экземпляр каждого подкласса.
-    static var shared: Singleton = Singleton()
+    static let shared = Singleton()
 
     /// Инициализатор Одиночки всегда должен быть скрытым, чтобы предотвратить
     /// прямое создание объекта через инициализатор.
@@ -20,7 +20,7 @@ class Singleton {
 
     /// Наконец, любой одиночка должен содержать некоторую бизнес-логику,
     /// которая может быть выполнена на его экземпляре.
-    func someBusinessLogic() -> String {
+    public func someBusinessLogic() -> String {
         return "Result of the 'someBusinessLogic' call"
     }
 }
@@ -33,19 +33,11 @@ extension Singleton: NSCopying {
 }
 
 /// Клиентский код.
-class Client {
-
-    static func someClientCode() {
-        let instance1 = Singleton.shared
-        let instance2 = Singleton.shared
-
-        instance1 === instance2 ? debugPrint("Singleton works, both variables contain the same instance.") : debugPrint("Singleton failed, variables contain different instances.")
-    }
-}
-
 class SingletonConceptual: XCTestCase {
-
     func testSingletonConceptual() {
-        Client.someClientCode()
+        let firstInstance = Singleton.shared
+        let secondInstance = Singleton.shared
+
+        XCTAssertTrue(firstInstance === secondInstance)
     }
 }

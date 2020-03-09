@@ -426,8 +426,8 @@
 			children = (
 				BEC1B83F24151E9200413092 /* Info.plist */,
 				BEC1B84324151EFF00413092 /* Decorator.png */,
-				BEC1B84824151F2900413092 /* DecoratorRealWorld */,
 				BEC1B84524151F0400413092 /* DecoratorCenceptual */,
+				BEC1B84824151F2900413092 /* DecoratorRealWorld */,
 			);
 			path = Decorator;
 			sourceTree = "<group>";

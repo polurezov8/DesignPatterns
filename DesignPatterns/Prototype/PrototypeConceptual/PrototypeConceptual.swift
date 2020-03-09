@@ -9,17 +9,15 @@ import XCTest
 /// клонируемым, вам нужно реализовать в нём протокол NSCopying, а именно метод
 /// `copy`.
 class BaseClass: NSCopying, Equatable {
-
     private var intValue = 1
     private var stringValue = "Value"
 
     required init(intValue: Int = 1, stringValue: String = "Value") {
-
         self.intValue = intValue
         self.stringValue = stringValue
     }
 
-    /// MARK: - NSCopying
+    // MARK: - NSCopying
     func copy(with zone: NSZone? = nil) -> Any {
         let prototype = type(of: self).init()
         prototype.intValue = intValue
@@ -28,8 +26,8 @@ class BaseClass: NSCopying, Equatable {
         return prototype
     }
 
-    /// MARK: - Equatable
-    static func == (lhs: BaseClass, rhs: BaseClass) -> Bool {
+    // MARK: - Equatable
+    static func ==(lhs: BaseClass, rhs: BaseClass) -> Bool {
         return lhs.intValue == rhs.intValue && lhs.stringValue == rhs.stringValue
     }
 }
@@ -49,6 +47,7 @@ class SubClass: BaseClass {
         guard let prototype = super.copy(with: zone) as? SubClass else {
             return SubClass() // oops
         }
+
         prototype.boolValue = boolValue
         debugPrint("Values defined in SubClass have been cloned!")
         return prototype
@@ -56,9 +55,8 @@ class SubClass: BaseClass {
 }
 
 /// Клиентский код.
-class PrototypeClient {
-    // ...
-    static func someClientCode() {
+private class PrototypeClient: XCTestCase {
+    func testSomeClientCode() {
         let original = SubClass(intValue: 2, stringValue: "Value2")
 
         guard let copy = original.copy() as? SubClass else {
@@ -67,9 +65,7 @@ class PrototypeClient {
         }
 
         /// См. реализацию протокола `Equatable`.
-        XCTAssert(copy == original)
-
+        XCTAssertTrue(copy == original)
         debugPrint("The original object is equal to the copied object!")
     }
-    // ...
 }

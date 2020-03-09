@@ -23,28 +23,45 @@ See also the UML class diagram below.
 
 The abstract factory pattern provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes. In normal usage, the client software creates a concrete implementation of the abstract factory and then uses the generic interface of the factory to create the concrete objects that are part of the theme. The client doesn't know (or care) which concrete objects it gets from each of these internal factories, since it uses only the generic interfaces of their products. This pattern separates the details of implementation of a set of objects from their general usage and relies on object composition, as object creation is implemented in methods exposed in the factory interface.
 
+See also the UML class diagram below.
+
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/AbstractFactory/AbstractFactory.png)
 
 ## Builder
 
 The builder pattern is a design pattern designed to provide a flexible solution to various object creation problems in object-oriented programming. The intent of the Builder design pattern is to separate the construction of a complex object from its representation.
 
+See also the UML class diagram below.
+
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Builder/Builder.png)
 
 ## Prototype
-The prototype pattern is a creational design pattern in software development. It is used when the type of objects to create is determined by a prototypical instance, which is cloned to produce new objects. This pattern is used to:
-* Avoid subclasses of an object creator in the client application, like the factory method pattern does.
-* Avoid the inherent cost of creating a new object in the standard way (e.g., using the 'new' keyword) when it is prohibitively expensive for a given application.
 
-To implement the pattern, declare an abstract base class that specifies a pure virtual clone() method. Any class that needs a "polymorphic constructor" capability derives itself from the abstract base class, and implements the clone() operation.
-The client, instead of writing code that invokes the "new" operator on a hard-coded class name, calls the clone() method on the prototype, calls a factory method with a parameter designating the particular concrete derived class desired, or invokes the clone() method through some mechanism provided by another design pattern.
+* What is it?
+The prototype pattern creates new objects by copying an existing object, known as the prototype.
+
+* What are the benefits?
+The main benefit is to hide the code that creates objects from the components that use them; this means that components don’t need to know which class or struct is required to create a new object, don’t need to know the details of initializers, and don’t need to change when subclasses are created and instantiated. This pattern can also be used to avoid repeating expensive initialization each time a new object of a specific type is created.
+
+* When should you use this pattern?
+This pattern is useful when you are writing a component that needs to create new instances of objects without creating a dependency on the class initializer.
+
+See also the UML class diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Prototype/Prototype.gif)
 
 ## Singleton
 
-In software engineering, the singleton pattern is a software design pattern that restricts the instantiation of a class to one "single" instance. This is useful when exactly one object is needed to coordinate actions across the system. The term comes from the mathematical concept of a singleton.
-Critics consider the singleton to be an anti-pattern in that it is frequently used in scenarios where it is not beneficial, introduces unnecessary restrictions in situations where a sole instance of a class is not actually required, and introduces global state into an application.
+* What is it?
+The singleton pattern ensures that only one object of a given type exists in the application.
+
+* What are the benefits?
+The singleton pattern can be used to manage objects that represent real-world resources or to encapsulate a shared resource.
+
+* When should you use this pattern?
+The singleton pattern should be used when creating further objects doesn’t increase the number of real-world resources available or when you want to consolidate an activity such as logging.
+
+See also the UML class diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Singleton/Singleton.png)
 
@@ -78,6 +95,7 @@ The bridge pattern is a design pattern used in software engineering that is mean
 When a class varies often, the features of object-oriented programming become very useful because changes to a program's code can be made easily with minimal prior knowledge about the program. The bridge pattern is useful when both the class and what it does vary often. The class itself can be thought of as the abstraction and what the class can do as the implementation. The bridge pattern can also be thought of as two layers of abstraction.
 
 See also the UML class diagram below.
+
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Bridge/Bridge.png)
 
 ## Composite
@@ -88,6 +106,7 @@ Use this pattern when you have a tree structure that contains leaf nodes and col
 This pattern is applicable only to tree data structures.
 
 See also the UML class diagram below.
+
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Composite/Composite.png)
 
 ## Decorator
