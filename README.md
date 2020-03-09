@@ -33,7 +33,14 @@ See also the UML class diagram below.
 
 ## Builder
 
-The builder pattern is a design pattern designed to provide a flexible solution to various object creation problems in object-oriented programming. The intent of the Builder design pattern is to separate the construction of a complex object from its representation.
+What is it? 
+* The builder pattern puts the logic and default configuration values required to create an object into a builder class. This allows calling components to create objects with minimal configuration data and without needing to know the default values that will be used to create the object.
+
+What are the benefits? 
+* This pattern makes it easier to change the default configuration values used to create an object and to change the class from which instances are created.
+
+When should you use this pattern? 
+* Use this pattern when a complex configuration process is required to create an object and you don’t want the default configuration values to be disseminated throughout the application.
 
 See also the UML class diagram below.
 
