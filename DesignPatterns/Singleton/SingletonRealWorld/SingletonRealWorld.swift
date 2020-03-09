@@ -35,7 +35,7 @@ extension Logger: NSCopying {
 }
 
 // MARK: - Tests
-class SingletonRealWorld: XCTestCase {
+private class SingletonRealWorld: XCTestCase {
     func testSingletonRealWorld() {
         let firstInstance = Logger.shared
         let secondInstance = Logger.shared

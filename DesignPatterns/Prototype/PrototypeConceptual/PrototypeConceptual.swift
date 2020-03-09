@@ -55,7 +55,7 @@ class SubClass: BaseClass {
 }
 
 /// Клиентский код.
-private class PrototypeClient: XCTestCase {
+private class PrototypeConceptual: XCTestCase {
     func testSomeClientCode() {
         let original = SubClass(intValue: 2, stringValue: "Value2")
 

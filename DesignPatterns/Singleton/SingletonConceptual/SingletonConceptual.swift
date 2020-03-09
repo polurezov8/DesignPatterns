@@ -33,7 +33,7 @@ extension Singleton: NSCopying {
 }
 
 /// Клиентский код.
-class SingletonConceptual: XCTestCase {
+private class SingletonConceptual: XCTestCase {
     func testSingletonConceptual() {
         let firstInstance = Singleton.shared
         let secondInstance = Singleton.shared
