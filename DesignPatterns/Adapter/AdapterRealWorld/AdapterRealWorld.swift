@@ -1,43 +1,57 @@
-import UIKit
-
-/// Adapter Design Pattern
-///
-/// Intent: Convert the interface of a class into the interface clients expect.
-/// Adapter lets classes work together that couldn't work otherwise because of
-/// incompatible interfaces.
-protocol AuthService {
-    func presentAuthFlow(from viewController: UIViewController)
+// MARK: - GoogleUser
+public struct GoogleUser {
+    public var email: String
+    public var password: String
+    public var token: String
 }
 
-class FacebookAuthSDK {
-
-    func presentAuthFlow(from viewController: UIViewController) {
-        /// Call SDK methods and pass a view controller
-        print("Facebook WebView has been shown.")
+// MARK: - GoogleAuthenticator
+public class GoogleAuthenticator {
+    public func login(email: String, password: String, completion: @escaping (GoogleUser?, Error?) -> Void) {
+        // Make networking calls that return a token string using Google SDK.
+        let token = "special-token-value"
+        let user = GoogleUser(email: email, password: password, token: token)
+        completion(user, nil)
     }
 }
 
-extension FacebookAuthSDK: AuthService {
-    /// This extension just tells a compiler that both SDKs have the same
-    /// interface.
+// MARK: - User
+public struct User {
+    public let email: String
+    public let password: String
 }
 
-class TwitterAuthSDK {
+// MARK: - Token
+public struct Token {
+    public let value: String
+}
 
-    func startAuthorization(with viewController: UIViewController) {
-        /// Call SDK methods and pass a view controller
-        print("Twitter WebView has been shown. Users will be happy :)")
+// MARK: - AuthenticationService
+public protocol AuthenticationService {
+    func login(email: String, password: String, success: @escaping (User, Token) -> Void, failure: @escaping (Error?) -> Void)
+}
+
+// MARK: - Adapter
+public class GoogleAuthenticatorAdapter {
+
+    // MARK: - Private properties
+    private var authenticator = GoogleAuthenticator()
+}
+
+// MARK: - AuthenticationService
+extension GoogleAuthenticatorAdapter: AuthenticationService {
+    public func login(email: String, password: String, success: @escaping (User, Token) -> Void, failure: @escaping (Error?) -> Void) {
+        authenticator.login(email: email, password: password) { googleUser, error in
+            guard let googleUser = googleUser else {
+                failure(error)
+                return
+            }
+
+            let user = User(email: googleUser.email, password: googleUser.password)
+            let token = Token(value: googleUser.token)
+            success(user, token)
+        }
     }
 }
 
-extension TwitterAuthSDK: AuthService {
-    /// This is an adapter
-    ///
-    /// Yeah, we are able to not create another class and just extend an
-    /// existing one
 
-    func presentAuthFlow(from viewController: UIViewController) {
-        print("The Adapter is called! Redirecting to the original method...")
-        self.startAuthorization(with: viewController)
-    }
-}

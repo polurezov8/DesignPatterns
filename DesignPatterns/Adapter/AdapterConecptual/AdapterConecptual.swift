@@ -6,8 +6,11 @@
 import XCTest
 
 /// Целевой класс объявляет интерфейс, с которым может работать клиентский код.
-class Target {
+protocol Target {
+    func request() -> String
+}
 
+extension Target {
     func request() -> String {
         return "Target: The default target's behavior."
     }
@@ -27,13 +30,16 @@ class Adaptee {
 /// интерфейсом.
 class Adapter: Target {
 
+    // MARK: - Properties
     private var adaptee: Adaptee
 
+    // MARK: - Life cycle
     init(_ adaptee: Adaptee) {
         self.adaptee = adaptee
     }
 
-    override func request() -> String {
+    // MARK: - Target
+    func request() -> String {
         return "Adapter: (TRANSLATED) " + adaptee.specificRequest().reversed()
     }
 }
@@ -42,7 +48,7 @@ class Adapter: Target {
 class Client {
 
     static func someClientCode(target: Target) {
-        print(target.request())
+        debugPrint(target.request())
     }
 }
 
@@ -50,14 +56,11 @@ class Client {
 class AdapterConceptual: XCTestCase {
 
     func testAdapterConceptual() {
-        print("Client: I can work just fine with the Target objects:")
-        Client.someClientCode(target: Target())
-
         let adaptee = Adaptee()
-        print("Client: The Adaptee class has a weird interface. See, I don't understand it:")
-        print("Adaptee: " + adaptee.specificRequest())
+        debugPrint("Client: The Adaptee class has a weird interface. See, I don't understand it:")
+        debugPrint("Adaptee: " + adaptee.specificRequest())
 
-        print("Client: But I can work with it via the Adapter:")
+        debugPrint("Client: But I can work with it via the Adapter:")
         Client.someClientCode(target: Adapter(adaptee))
     }
 }
