@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE30FBF62428100D008A3899 /* Facade.png in Resources */ = {isa = PBXBuildFile; fileRef = BE30FBF52428100D008A3899 /* Facade.png */; };
+		BE30FBF9242813A3008A3899 /* FacadeConceptual.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE30FBF8242813A3008A3899 /* FacadeConceptual.swift */; };
+		BE30FBFB242813CC008A3899 /* FacadeRealWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE30FBFA242813CC008A3899 /* FacadeRealWorld.swift */; };
 		BE43C6C8240C1F9D00035782 /* FactoryMethodBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE43C6C7240C1F9D00035782 /* FactoryMethodBase.swift */; };
 		BE43C6CB240C1FD400035782 /* FactoryMethodConceptual.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE43C6CA240C1FD400035782 /* FactoryMethodConceptual.swift */; };
 		BE43C6CE240C200900035782 /* FactoryMethodRealWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE43C6CD240C200900035782 /* FactoryMethodRealWorld.swift */; };
@@ -39,6 +42,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE30FBED24280F54008A3899 /* Facade.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Facade.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE30FBF124280F54008A3899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE30FBF52428100D008A3899 /* Facade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facade.png; sourceTree = "<group>"; };
+		BE30FBF8242813A3008A3899 /* FacadeConceptual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeConceptual.swift; sourceTree = "<group>"; };
+		BE30FBFA242813CC008A3899 /* FacadeRealWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeRealWorld.swift; sourceTree = "<group>"; };
 		BE43C699240C1ECB00035782 /* FactoryMethod.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactoryMethod.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE43C69E240C1ECB00035782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE43C6A6240C1EE300035782 /* AbstractFactory.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbstractFactory.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +97,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BE30FBEA24280F54008A3899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE43C696240C1ECB00035782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -155,6 +170,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE30FBEE24280F54008A3899 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				BE30FBF124280F54008A3899 /* Info.plist */,
+				BE30FBF52428100D008A3899 /* Facade.png */,
+				BE30FBF724281382008A3899 /* FacadeConceptual */,
+				BE30FBFC242813D5008A3899 /* FacadeRealWorld */,
+			);
+			path = Facade;
+			sourceTree = "<group>";
+		};
+		BE30FBF724281382008A3899 /* FacadeConceptual */ = {
+			isa = PBXGroup;
+			children = (
+				BE30FBF8242813A3008A3899 /* FacadeConceptual.swift */,
+			);
+			path = FacadeConceptual;
+			sourceTree = "<group>";
+		};
+		BE30FBFC242813D5008A3899 /* FacadeRealWorld */ = {
+			isa = PBXGroup;
+			children = (
+				BE30FBFA242813CC008A3899 /* FacadeRealWorld.swift */,
+			);
+			path = FacadeRealWorld;
+			sourceTree = "<group>";
+		};
 		BE43C68E240C1EA300035782 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +209,7 @@
 				BEB3CF1F240C365B00BB86B1 /* Bridge */,
 				BEC1B82824150F4E00413092 /* Composite */,
 				BEC1B83C24151E9200413092 /* Decorator */,
+				BE30FBEE24280F54008A3899 /* Facade */,
 				BE43C69A240C1ECB00035782 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -183,6 +226,7 @@
 				BEB3CF1E240C365B00BB86B1 /* Bridge.xctest */,
 				BEC1B82724150F4E00413092 /* Composite.xctest */,
 				BEC1B83B24151E9200413092 /* Decorator.xctest */,
+				BE30FBED24280F54008A3899 /* Facade.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -451,6 +495,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BE30FBEC24280F54008A3899 /* Facade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE30FBF424280F54008A3899 /* Build configuration list for PBXNativeTarget "Facade" */;
+			buildPhases = (
+				BE30FBE924280F54008A3899 /* Sources */,
+				BE30FBEA24280F54008A3899 /* Frameworks */,
+				BE30FBEB24280F54008A3899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Facade;
+			productName = Facade;
+			productReference = BE30FBED24280F54008A3899 /* Facade.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BE43C698240C1ECB00035782 /* FactoryMethod */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE43C69F240C1ECB00035782 /* Build configuration list for PBXNativeTarget "FactoryMethod" */;
@@ -613,6 +674,10 @@
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
+					BE30FBEC24280F54008A3899 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
 					BE43C698240C1ECB00035782 = {
 						CreatedOnToolsVersion = 11.3.1;
 						LastSwiftMigration = 1130;
@@ -673,11 +738,20 @@
 				BEB3CF1D240C365B00BB86B1 /* Bridge */,
 				BEC1B82624150F4E00413092 /* Composite */,
 				BEC1B83A24151E9200413092 /* Decorator */,
+				BE30FBEC24280F54008A3899 /* Facade */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BE30FBEB24280F54008A3899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE30FBF62428100D008A3899 /* Facade.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE43C697240C1ECB00035782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -753,6 +827,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BE30FBE924280F54008A3899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE30FBFB242813CC008A3899 /* FacadeRealWorld.swift in Sources */,
+				BE30FBF9242813A3008A3899 /* FacadeConceptual.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE43C695240C1ECB00035782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -839,6 +922,144 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		BE30FBF224280F54008A3899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 43PB76C2UN;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Facade/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = DmitryPolurezov.Facade;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE30FBF324280F54008A3899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 43PB76C2UN;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Facade/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = DmitryPolurezov.Facade;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		BE43C693240C1EA300035782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2096,6 +2317,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BE30FBF424280F54008A3899 /* Build configuration list for PBXNativeTarget "Facade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE30FBF224280F54008A3899 /* Debug */,
+				BE30FBF324280F54008A3899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BE43C692240C1EA300035782 /* Build configuration list for PBXProject "DesignPatterns" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

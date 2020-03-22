@@ -93,20 +93,30 @@ See also the UML class diagram below.
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Adapter/Adapter.png)
 
 ## Bridge
-The bridge pattern is a design pattern used in software engineering that is meant to "decouple an abstraction from its implementation so that the two can vary independently", introduced by the Gang of Four.[1] The bridge uses encapsulation, aggregation, and can use inheritance to separate responsibilities into different classes.
 
-When a class varies often, the features of object-oriented programming become very useful because changes to a program's code can be made easily with minimal prior knowledge about the program. The bridge pattern is useful when both the class and what it does vary often. The class itself can be thought of as the abstraction and what the class can do as the implementation. The bridge pattern can also be thought of as two layers of abstraction.
+What is it? 
+* The bridge pattern separates an abstraction from its implementation so that either can be changed without a corresponding change in the other. 
+
+What are the benefits? 
+* When the bridge pattern is applied to the exploding class hierarchy problem, the benefit is that adding a new feature to the application requires only a single class.
+
+When should you use this pattern? 
+* Use this pattern to resolve the exploding class hierarchy problem or to bridge between one API and another.
 
 See also the UML class diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Bridge/Bridge.png)
 
 ## Composite
-The composite pattern allows a tree of individual objects and collections of objects to be treated consistently.
-The consistency that the composite pattern brings means that components that operate on the tree structure are simpler and do not need to have knowledge of the different objects types that are in use.
 
-Use this pattern when you have a tree structure that contains leaf nodes and collections of objects.
-This pattern is applicable only to tree data structures.
+What is it? 
+* The composite pattern allows a tree of individual objects and collections of objects to be treated consistently. 
+
+What are the benefits? 
+* The consistency that the composite pattern brings means that components that operate on the tree structure are simpler and do not need to have knowledge of the different objects types that are in use.
+
+When should you use this pattern? 
+* Use this pattern when you have a tree structure that contains leaf nodes and collections of objects.
 
 See also the UML class diagram below.
 
@@ -114,13 +124,14 @@ See also the UML class diagram below.
 
 ## Decorator
 
-The decorator pattern allows the behavior of individual objects to be changed without requiring changes to the classes that are used to create them or the components that consume them.
+What is it? 
+* The decorator pattern allows the behavior of individual objects to be changed without requiring changes to the classes that are used to create them or the components that consume them. 
 
-The changes in behavior defined with the decorator pattern can be combined to create complex effects without needing to create large numbers of subclasses.
+What are the benefits? 
+* The changes in behavior defined with the decorator pattern can be combined to create complex effects without needing to create large numbers of subclasses.
 
-Use this pattern when you need to change the behavior of objects without changing the class they are created from or the components that use them.
-
-Don''t use this pattern when you are able to change the class that creates the objects you want to modify. It is usually simpler and easier to modify the class directly.
+When should you use this pattern? 
+* Use this pattern when you need to change the behavior of objects without changing the class they are created from or the components that use them.
 
 See also the UML class and sequence diagram below.
 
@@ -128,44 +139,15 @@ See also the UML class and sequence diagram below.
 
 ## Facade
 
-The Facade design pattern is one of the twenty-three well-known GoF design patterns that describe how to solve recurring design problems to design flexible and reusable object-oriented software, that is, objects that are easier to implement, change, test, and reuse.
+What is it?
+* The facade pattern simplifies the use of complex APIs to perform common tasks.
 
-What problems can the Facade design pattern solve?
+What are the benefits? 
+* The complexity required to use an API is consolidated into a single class, which minimizes the impact of changes in the API and simplifies the components that consume the API functionality.
 
-* To make a complex subsystem easier to use, a simple interface should be provided for a set of interfaces in the subsystem.
-* The dependencies on a subsystem should be minimized.
-Clients that access a complex subsystem directly refer to (depend on) many different objects having different interfaces (tight coupling), which makes the clients hard to implement, change, test, and reuse.
-
-What solution does the Facade design pattern describe?
-
-Define a Facade object that:
-
-* Implements a simple interface in terms of (by delegating to) the interfaces in the subsystem.
-* May perform additional functionality before/after forwarding a request.
-This enables to work through a Facade object to minimize the dependencies on a subsystem.
+When should you use this pattern? 
+* Use the façade pattern when you are working with classes that need to be used together but that don’t have compatible APIs.
 
 See also the UML class and sequence diagram below.
 
-![](https://github.com/polurezov8/Patterns/blob/master/Facade/facade.png)
-
-## Behavioral Patterns
-## Iterator
-
-The Iterator design pattern is one of the twenty-three well-known GoF design patterns that describe how to solve recurring design problems to design flexible and reusable object-oriented software, that is, objects that are easier to implement, change, test, and reuse.
-
-What problems can the Iterator design pattern solve?
-
-* The elements of an aggregate object should be accessed and traversed without exposing its representation (data structures).
-* New traversal operations should be defined for an aggregate object without changing its interface.
-Defining access and traversal operations in the aggregate interface is inflexible because it commits the aggregate to particular access and traversal operations and makes it impossible to add new operations later without having to change the aggregate interface.
-
-What solution does the Iterator design pattern describe?
-
-* Define a separate (iterator) object that encapsulates accessing and traversing an aggregate object.
-* Clients use an iterator to access and traverse an aggregate without knowing its representation (data structures).
-Different iterators can be used to access and traverse an aggregate in different ways.
-New access and traversal operations can be defined independently by defining new iterators.
-
-See also the UML class and sequence diagram below.
-
-![](https://github.com/polurezov8/Patterns/blob/master/Iterator/Iterator.png)
+![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Facade/Facade.png)
