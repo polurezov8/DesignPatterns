@@ -72,7 +72,7 @@ class ConcreteImplementationB: Implementation {
 /// комбинацию абстракции и реализации.
 class Client {
 
-    static func someClientCode(abstraction: Abstraction) {
+    func someClientCode(abstraction: Abstraction) {
         print(abstraction.operation())
     }
 }

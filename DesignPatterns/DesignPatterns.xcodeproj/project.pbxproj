@@ -23,6 +23,9 @@
 		BE43C6E5240C21A900035782 /* FactoryMethod.png in Resources */ = {isa = PBXBuildFile; fileRef = BE43C6E4240C21A800035782 /* FactoryMethod.png */; };
 		BE43C6E7240C21C300035782 /* AbstractFactory.png in Resources */ = {isa = PBXBuildFile; fileRef = BE43C6E6240C21C300035782 /* AbstractFactory.png */; };
 		BE43C6EB240C220500035782 /* Prototype.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE43C6EA240C220500035782 /* Prototype.gif */; };
+		BE8B8954245F679100CBA22E /* BridgeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8B8953245F679100CBA22E /* BridgeBase.swift */; };
+		BE8B8957245F68EE00CBA22E /* CompositeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8B8956245F68EE00CBA22E /* CompositeBase.swift */; };
+		BE8B895C245F6A0A00CBA22E /* DecoratorBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8B895B245F6A0A00CBA22E /* DecoratorBase.swift */; };
 		BEB3CEFB240C2D7200BB86B1 /* SingletonConceptual.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB3CEFA240C2D7200BB86B1 /* SingletonConceptual.swift */; };
 		BEB3CEFF240C2EA700BB86B1 /* SingletonRealWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB3CEFE240C2EA700BB86B1 /* SingletonRealWorld.swift */; };
 		BEB3CF0E240C31FA00BB86B1 /* AdapterConecptual.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB3CF0D240C31FA00BB86B1 /* AdapterConecptual.swift */; };
@@ -68,6 +71,9 @@
 		BE43C6E4240C21A800035782 /* FactoryMethod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FactoryMethod.png; sourceTree = "<group>"; };
 		BE43C6E6240C21C300035782 /* AbstractFactory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AbstractFactory.png; sourceTree = "<group>"; };
 		BE43C6EA240C220500035782 /* Prototype.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Prototype.gif; sourceTree = "<group>"; };
+		BE8B8953245F679100CBA22E /* BridgeBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeBase.swift; sourceTree = "<group>"; };
+		BE8B8956245F68EE00CBA22E /* CompositeBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeBase.swift; sourceTree = "<group>"; };
+		BE8B895B245F6A0A00CBA22E /* DecoratorBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorBase.swift; sourceTree = "<group>"; };
 		BEB3CEF1240C2D3900BB86B1 /* Singleton.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Singleton.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB3CEF5240C2D3900BB86B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEB3CEFA240C2D7200BB86B1 /* SingletonConceptual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonConceptual.swift; sourceTree = "<group>"; };
@@ -357,6 +363,30 @@
 			path = PrototypeRealWorld;
 			sourceTree = "<group>";
 		};
+		BE8B8952245F677F00CBA22E /* BridgeBase */ = {
+			isa = PBXGroup;
+			children = (
+				BE8B8953245F679100CBA22E /* BridgeBase.swift */,
+			);
+			path = BridgeBase;
+			sourceTree = "<group>";
+		};
+		BE8B8955245F68E100CBA22E /* CompositeBase */ = {
+			isa = PBXGroup;
+			children = (
+				BE8B8956245F68EE00CBA22E /* CompositeBase.swift */,
+			);
+			path = CompositeBase;
+			sourceTree = "<group>";
+		};
+		BE8B8958245F69F100CBA22E /* DecoratorBase */ = {
+			isa = PBXGroup;
+			children = (
+				BE8B895B245F6A0A00CBA22E /* DecoratorBase.swift */,
+			);
+			path = DecoratorBase;
+			sourceTree = "<group>";
+		};
 		BEB3CEF2240C2D3900BB86B1 /* Singleton */ = {
 			isa = PBXGroup;
 			children = (
@@ -416,6 +446,7 @@
 			children = (
 				BEB3CF22240C365B00BB86B1 /* Info.plist */,
 				BEB3CF2E240C3AA300BB86B1 /* Bridge.png */,
+				BE8B8952245F677F00CBA22E /* BridgeBase */,
 				BEB3CF26240C368500BB86B1 /* BridgeConceptual */,
 				BEB3CF29240C374600BB86B1 /* BridgeRealWorld */,
 			);
@@ -443,6 +474,7 @@
 			children = (
 				BEC1B82B24150F4E00413092 /* Info.plist */,
 				BEC1B835241513CA00413092 /* Composite.png */,
+				BE8B8955245F68E100CBA22E /* CompositeBase */,
 				BEC1B82F24150F6900413092 /* CompositeConceptual */,
 				BEC1B832241510D600413092 /* CompositeRealWorld */,
 			);
@@ -470,6 +502,7 @@
 			children = (
 				BEC1B83F24151E9200413092 /* Info.plist */,
 				BEC1B84324151EFF00413092 /* Decorator.png */,
+				BE8B8958245F69F100CBA22E /* DecoratorBase */,
 				BEC1B84524151F0400413092 /* DecoratorCenceptual */,
 				BEC1B84824151F2900413092 /* DecoratorRealWorld */,
 			);
@@ -896,6 +929,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE8B8954245F679100CBA22E /* BridgeBase.swift in Sources */,
 				BEB3CF28240C369200BB86B1 /* BridgeConceptual.swift in Sources */,
 				BEB3CF2B240C375600BB86B1 /* BridgeRealWorld.swift in Sources */,
 			);
@@ -906,6 +940,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEC1B834241510E800413092 /* CompositeRealWorld.swift in Sources */,
+				BE8B8957245F68EE00CBA22E /* CompositeBase.swift in Sources */,
 				BEC1B83124150F7F00413092 /* CompositeConceptual.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -915,6 +950,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEC1B84A24151F3700413092 /* DecoratorRealWorld.swift in Sources */,
+				BE8B895C245F6A0A00CBA22E /* DecoratorBase.swift in Sources */,
 				BEC1B84724151F1A00413092 /* DecoratorCenceptual.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

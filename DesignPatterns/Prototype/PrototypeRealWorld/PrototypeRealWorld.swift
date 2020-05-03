@@ -48,7 +48,9 @@ final class Appointment: NSObject, NSCopying {
 private class PrototypeRealWorld: XCTestCase {
     func testDeepCopy() {
         let beerMeeting = Appointment(name: "Bob", day: "Mon", place: Location(name: "Joe's Bar", address: "123 Main St"))
-        let workMeeting = beerMeeting.copy() as! Appointment
+        guard let workMeeting = beerMeeting.copy() as? Appointment else {
+            return
+        }
 
         workMeeting.name = "Alice"
         workMeeting.day = "Fri"

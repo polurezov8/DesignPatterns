@@ -1,6 +1,6 @@
 // MARK: - Protocols
 // MARK: ExerciseCreatable
-protocol ExerciseCreatable: class {
+protocol ExerciseCreatable {
     func createExercise(type: Exercises) -> Exercisable
 }
 
@@ -39,23 +39,14 @@ class Squats: Exercisable {
 }
 
 // MARK: - Factory
-// MARK: - Exercises
+// MARK: Exercises
 enum Exercises {
     case jumping
     case squarts
 }
 
-final class ExercisesFactory {
-    // MARK: - Singleton instance
-    static let defaultFactory = ExercisesFactory()
-
-    // MARK: - Initialization
-    private init() {
-    }
-}
-
 // MARK: - ExerciseCreatable
-extension ExercisesFactory: ExerciseCreatable {
+enum ExercisesFactory: ExerciseCreatable {
     func createExercise(type: Exercises) -> Exercisable {
         switch type {
         case .jumping:
