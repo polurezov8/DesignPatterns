@@ -29,6 +29,9 @@
 		BE8B896C245F75D400CBA22E /* ProxyConceptual.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8B896B245F75D400CBA22E /* ProxyConceptual.swift */; };
 		BE8B896E245F771100CBA22E /* ProxyRealWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8B896D245F771100CBA22E /* ProxyRealWorld.swift */; };
 		BE8B8970245F78A000CBA22E /* Proxy.png in Resources */ = {isa = PBXBuildFile; fileRef = BE8B896F245F78A000CBA22E /* Proxy.png */; };
+		BE8B8980245F7E6B00CBA22E /* FlyweightConceptual.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8B897F245F7E6B00CBA22E /* FlyweightConceptual.swift */; };
+		BE8B8982245F7E7100CBA22E /* FlyweightRealWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8B8981245F7E7100CBA22E /* FlyweightRealWorld.swift */; };
+		BE8B8984245F808B00CBA22E /* Flyweight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE8B8983245F808B00CBA22E /* Flyweight.png */; };
 		BEB3CEFB240C2D7200BB86B1 /* SingletonConceptual.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB3CEFA240C2D7200BB86B1 /* SingletonConceptual.swift */; };
 		BEB3CEFF240C2EA700BB86B1 /* SingletonRealWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB3CEFE240C2EA700BB86B1 /* SingletonRealWorld.swift */; };
 		BEB3CF0E240C31FA00BB86B1 /* AdapterConecptual.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB3CF0D240C31FA00BB86B1 /* AdapterConecptual.swift */; };
@@ -82,6 +85,11 @@
 		BE8B896B245F75D400CBA22E /* ProxyConceptual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConceptual.swift; sourceTree = "<group>"; };
 		BE8B896D245F771100CBA22E /* ProxyRealWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyRealWorld.swift; sourceTree = "<group>"; };
 		BE8B896F245F78A000CBA22E /* Proxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Proxy.png; sourceTree = "<group>"; };
+		BE8B8975245F7E2200CBA22E /* Flyweight.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Flyweight.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE8B8979245F7E2200CBA22E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE8B897F245F7E6B00CBA22E /* FlyweightConceptual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightConceptual.swift; sourceTree = "<group>"; };
+		BE8B8981245F7E7100CBA22E /* FlyweightRealWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightRealWorld.swift; sourceTree = "<group>"; };
+		BE8B8983245F808B00CBA22E /* Flyweight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flyweight.png; sourceTree = "<group>"; };
 		BEB3CEF1240C2D3900BB86B1 /* Singleton.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Singleton.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB3CEF5240C2D3900BB86B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEB3CEFA240C2D7200BB86B1 /* SingletonConceptual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonConceptual.swift; sourceTree = "<group>"; };
@@ -147,6 +155,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BE8B895E245F757F00CBA22E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8B8972245F7E2200CBA22E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,6 +247,7 @@
 				BEC1B83C24151E9200413092 /* Decorator */,
 				BE30FBEE24280F54008A3899 /* Facade */,
 				BE8B8962245F757F00CBA22E /* Proxy */,
+				BE8B8976245F7E2200CBA22E /* Flyweight */,
 				BE43C69A240C1ECB00035782 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -250,6 +266,7 @@
 				BEC1B83B24151E9200413092 /* Decorator.xctest */,
 				BE30FBED24280F54008A3899 /* Facade.xctest */,
 				BE8B8961245F757F00CBA22E /* Proxy.xctest */,
+				BE8B8975245F7E2200CBA22E /* Flyweight.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -429,6 +446,33 @@
 				BE8B896D245F771100CBA22E /* ProxyRealWorld.swift */,
 			);
 			path = ProxyRealWorld;
+			sourceTree = "<group>";
+		};
+		BE8B8976245F7E2200CBA22E /* Flyweight */ = {
+			isa = PBXGroup;
+			children = (
+				BE8B8979245F7E2200CBA22E /* Info.plist */,
+				BE8B8983245F808B00CBA22E /* Flyweight.png */,
+				BE8B897D245F7E4B00CBA22E /* FlyweightConceptual */,
+				BE8B897E245F7E5C00CBA22E /* FlyweightRealWorld */,
+			);
+			path = Flyweight;
+			sourceTree = "<group>";
+		};
+		BE8B897D245F7E4B00CBA22E /* FlyweightConceptual */ = {
+			isa = PBXGroup;
+			children = (
+				BE8B897F245F7E6B00CBA22E /* FlyweightConceptual.swift */,
+			);
+			path = FlyweightConceptual;
+			sourceTree = "<group>";
+		};
+		BE8B897E245F7E5C00CBA22E /* FlyweightRealWorld */ = {
+			isa = PBXGroup;
+			children = (
+				BE8B8981245F7E7100CBA22E /* FlyweightRealWorld.swift */,
+			);
+			path = FlyweightRealWorld;
 			sourceTree = "<group>";
 		};
 		BEB3CEF2240C2D3900BB86B1 /* Singleton */ = {
@@ -674,6 +718,23 @@
 			productReference = BE8B8961245F757F00CBA22E /* Proxy.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BE8B8974245F7E2200CBA22E /* Flyweight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE8B897C245F7E2200CBA22E /* Build configuration list for PBXNativeTarget "Flyweight" */;
+			buildPhases = (
+				BE8B8971245F7E2200CBA22E /* Sources */,
+				BE8B8972245F7E2200CBA22E /* Frameworks */,
+				BE8B8973245F7E2200CBA22E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flyweight;
+			productName = Flyweight;
+			productReference = BE8B8975245F7E2200CBA22E /* Flyweight.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BEB3CEF0240C2D3900BB86B1 /* Singleton */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEB3CEF8240C2D3900BB86B1 /* Build configuration list for PBXNativeTarget "Singleton" */;
@@ -792,6 +853,10 @@
 						CreatedOnToolsVersion = 11.4.1;
 						LastSwiftMigration = 1140;
 					};
+					BE8B8974245F7E2200CBA22E = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
+					};
 					BEB3CEF0240C2D3900BB86B1 = {
 						CreatedOnToolsVersion = 11.3.1;
 						LastSwiftMigration = 1130;
@@ -838,6 +903,7 @@
 				BEC1B83A24151E9200413092 /* Decorator */,
 				BE30FBEC24280F54008A3899 /* Facade */,
 				BE8B8960245F757F00CBA22E /* Proxy */,
+				BE8B8974245F7E2200CBA22E /* Flyweight */,
 			);
 		};
 /* End PBXProject section */
@@ -888,6 +954,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE8B8970245F78A000CBA22E /* Proxy.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8B8973245F7E2200CBA22E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8B8984245F808B00CBA22E /* Flyweight.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -987,6 +1061,15 @@
 			files = (
 				BE8B896C245F75D400CBA22E /* ProxyConceptual.swift in Sources */,
 				BE8B896E245F771100CBA22E /* ProxyRealWorld.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8B8971245F7E2200CBA22E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8B8982245F7E7100CBA22E /* FlyweightRealWorld.swift in Sources */,
+				BE8B8980245F7E6B00CBA22E /* FlyweightConceptual.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1881,6 +1964,144 @@
 			};
 			name = Release;
 		};
+		BE8B897A245F7E2200CBA22E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 43PB76C2UN;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Flyweight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = DmitryPolurezov.Flyweight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE8B897B245F7E2200CBA22E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 43PB76C2UN;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Flyweight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = DmitryPolurezov.Flyweight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		BEB3CEF6240C2D3900BB86B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2633,6 +2854,15 @@
 			buildConfigurations = (
 				BE8B8967245F757F00CBA22E /* Debug */,
 				BE8B8968245F757F00CBA22E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE8B897C245F7E2200CBA22E /* Build configuration list for PBXNativeTarget "Flyweight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE8B897A245F7E2200CBA22E /* Debug */,
+				BE8B897B245F7E2200CBA22E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

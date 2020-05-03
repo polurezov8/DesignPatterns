@@ -166,3 +166,18 @@ When should you use this pattern?
 See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Proxy/Proxy.png)
+
+## Flyweight
+
+What is it?
+* The flyweight pattern shares common data objects between multiple calling components.
+
+What are the benefits? 
+* The flyweight pattern reduces the amount of memory needed to create the data objects required by the calling components and the amount of work required to create them. The impact of implementing the pattern increases with the number of calling components that share the data.
+
+When should you use this pattern? 
+* Use this pattern when you are able to identify and isolate sets of identical data objects that are used by calling components.
+
+See also the UML class and sequence diagram below.
+
+![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Flyweight/Flyweight.png)
