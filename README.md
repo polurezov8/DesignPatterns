@@ -146,8 +146,23 @@ What are the benefits?
 * The complexity required to use an API is consolidated into a single class, which minimizes the impact of changes in the API and simplifies the components that consume the API functionality.
 
 When should you use this pattern? 
-* Use the façade pattern when you are working with classes that need to be used together but that don’t have compatible APIs.
+* Use the facade pattern when you are working with classes that need to be used together but that don’t have compatible APIs.
 
 See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Facade/Facade.png)
+
+## Proxy
+
+What is it?
+* The proxy pattern defines an object—the proxy—that represents some other resource, such as another object or a remote service. Calling components operate on the proxy, which in turn operates on the underlying resource.
+
+What are the benefits? 
+* Proxies allow close control over the way that the underlying resource is accessed, which is useful when you need to intercept and adapt operations.
+
+When should you use this pattern? 
+* Proxies are used in three main situations: to define an interface to a remote resource such as a web page or RESTful service, to manage the execution of expensive operations, and to restrict access to the methods and properties of other objects.
+
+See also the UML class and sequence diagram below.
+
+![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Proxy/Proxy.png)
