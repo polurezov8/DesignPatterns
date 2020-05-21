@@ -181,3 +181,18 @@ When should you use this pattern?
 See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Flyweight/Flyweight.png)
+
+## Chain Of Responsibility
+
+What is it?
+* The chain of responsibility pattern organizes sequentially a set of objects that may be able to take responsibility for a request from a calling component. The sequence of objects is referred to as a chain, and each object in the chain is asked to take responsibility for the request. The request moves along the chain until one of the objects takes responsibility or the end of the chain is reached.
+
+What are the benefits? 
+* The chain of responsibility allows objects that can process requests to be ordered into a preferential sequence that can be reordered, extended, or reduced without any impact on the calling component, which has no insight into the objects that comprise the chain.
+
+When should you use this pattern? 
+* Use this pattern when there are several objects that can handle a request, only one of which should be used.
+
+See also the UML class and sequence diagram below.
+
+![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/ChainOfResponsibility/ChainOfResponsibility.png)

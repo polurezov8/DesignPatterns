@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>ChainOfResponsibility.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
 		<key>Composite.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -113,6 +118,11 @@
 			<true/>
 		</dict>
 		<key>BEB3CF1D240C365B00BB86B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BEBB85C62477150F00C9DA1F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
