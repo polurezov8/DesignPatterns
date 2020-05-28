@@ -29,6 +29,11 @@
 			<key>orderHint</key>
 			<integer>12</integer>
 		</dict>
+		<key>Command.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
 		<key>Composite.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -133,6 +138,11 @@
 			<true/>
 		</dict>
 		<key>BEC1B83A24151E9200413092</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BEF4E2A4248053BF000D68EA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
