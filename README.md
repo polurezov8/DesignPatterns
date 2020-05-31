@@ -211,3 +211,19 @@ When should you use this pattern?
 See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Command/Command.png)
+
+## Iterator
+
+What is it?
+* In object-oriented programming, the iterator pattern is a design pattern in which an iterator is used to traverse a container and access the container's elements. The iterator pattern decouples algorithms from containers; in some cases, algorithms are necessarily container-specific and thus cannot be decoupled.
+
+What are the benefits? 
+* Define a separate (iterator) object that encapsulates accessing and traversing an aggregate object.
+* Clients use an iterator to access and traverse an aggregate without knowing its representation (data structures).
+
+When should you use this pattern? 
+* For example, the hypothetical algorithm SearchForElement can be implemented generally using a specified type of iterator rather than implementing it as a container-specific algorithm. This allows SearchForElement to be used on any container that supports the required type of iterator.
+
+See also the UML class and sequence diagram below.
+
+![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Iterator/Iterator.png)
