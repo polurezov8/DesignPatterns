@@ -37,6 +37,7 @@
 		BE8B8984245F808B00CBA22E /* Flyweight.png in Resources */ = {isa = PBXBuildFile; fileRef = BE8B8983245F808B00CBA22E /* Flyweight.png */; };
 		BEA3166A24883FED000D5282 /* MediatorConceptual.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA3166924883FED000D5282 /* MediatorConceptual.swift */; };
 		BEA3166C24883FF8000D5282 /* MediatorRealWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA3166B24883FF8000D5282 /* MediatorRealWorld.swift */; };
+		BEA3166E24884751000D5282 /* Mediator.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA3166D24884751000D5282 /* Mediator.png */; };
 		BEB3CEFB240C2D7200BB86B1 /* SingletonConceptual.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB3CEFA240C2D7200BB86B1 /* SingletonConceptual.swift */; };
 		BEB3CEFF240C2EA700BB86B1 /* SingletonRealWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB3CEFE240C2EA700BB86B1 /* SingletonRealWorld.swift */; };
 		BEB3CF0E240C31FA00BB86B1 /* AdapterConecptual.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB3CF0D240C31FA00BB86B1 /* AdapterConecptual.swift */; };
@@ -111,6 +112,7 @@
 		BEA3166324883CB4000D5282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEA3166924883FED000D5282 /* MediatorConceptual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorConceptual.swift; sourceTree = "<group>"; };
 		BEA3166B24883FF8000D5282 /* MediatorRealWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorRealWorld.swift; sourceTree = "<group>"; };
+		BEA3166D24884751000D5282 /* Mediator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mediator.png; sourceTree = "<group>"; };
 		BEB3CEF1240C2D3900BB86B1 /* Singleton.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Singleton.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB3CEF5240C2D3900BB86B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEB3CEFA240C2D7200BB86B1 /* SingletonConceptual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonConceptual.swift; sourceTree = "<group>"; };
@@ -574,6 +576,7 @@
 			isa = PBXGroup;
 			children = (
 				BEA3166324883CB4000D5282 /* Info.plist */,
+				BEA3166D24884751000D5282 /* Mediator.png */,
 				BEA3166724883FC0000D5282 /* Conceptual */,
 				BEA3166824883FD0000D5282 /* RealWorld */,
 			);
@@ -1240,6 +1243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA3166E24884751000D5282 /* Mediator.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
