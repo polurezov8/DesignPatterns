@@ -7,6 +7,12 @@
 
 import XCTest
 
+enum IterationType {
+    case inOrder
+    case preOrder
+    case postOrder
+}
+
 class Tree<T> {
 
     var value: T
@@ -18,12 +24,6 @@ class Tree<T> {
     }
 
     typealias Block = (T) -> ()
-
-    enum IterationType {
-        case inOrder
-        case preOrder
-        case postOrder
-    }
 
     func iterator(_ type: IterationType) -> AnyIterator<T> {
         var items: [T] = []

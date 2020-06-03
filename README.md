@@ -227,3 +227,18 @@ When should you use this pattern?
 See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Iterator/Iterator.png)
+
+## Mediator
+
+What is it?
+* The mediator pattern simplifies peer-to-peer communication between objects by introducing a mediator object that acts as a communications broker between the objects.
+
+What are the benefits? 
+* Instead of having to keep track of and communicate with of all of its peers individually, an object just deals with the mediator.
+
+When should you use this pattern? 
+* Use this pattern when you are dealing with a group of objects that need to communicate freely between one another.
+
+See also the UML class and sequence diagram below.
+
+![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Mediator/Mediator.png)
