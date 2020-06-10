@@ -242,3 +242,18 @@ When should you use this pattern?
 See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Mediator/Mediator.png)
+
+## Memento
+
+What is it?
+* The memento pattern captures the complete state of an object into a memento that can be used to reset the object at a later date.
+
+What are the benefits? 
+* The memento pattern allows a complete reset of an object without the need to track and apply individual undo commands.
+
+When should you use this pattern? 
+* Use this pattern when there is a “known-good” point in an object’s life that you may want to return to at some point in the future.
+
+See also the UML class and sequence diagram below.
+
+![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Memento/Memento.png)
