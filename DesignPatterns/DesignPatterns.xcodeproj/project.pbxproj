@@ -29,6 +29,9 @@
 		BE6CAD77249107C6008FA0E1 /* MementoConceptual.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CAD76249107C6008FA0E1 /* MementoConceptual.swift */; };
 		BE6CAD79249107D2008FA0E1 /* MementoRealWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CAD78249107D2008FA0E1 /* MementoRealWorld.swift */; };
 		BE6CAD7B249109C2008FA0E1 /* Memento.png in Resources */ = {isa = PBXBuildFile; fileRef = BE6CAD7A249109C2008FA0E1 /* Memento.png */; };
+		BE6CAD8B24910F70008FA0E1 /* ObserverConceptual.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CAD8A24910F70008FA0E1 /* ObserverConceptual.swift */; };
+		BE6CAD8D24910F7A008FA0E1 /* ObserverRealWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6CAD8C24910F7A008FA0E1 /* ObserverRealWorld.swift */; };
+		BE6CAD8F24911476008FA0E1 /* Observer.png in Resources */ = {isa = PBXBuildFile; fileRef = BE6CAD8E24911476008FA0E1 /* Observer.png */; };
 		BE8B8954245F679100CBA22E /* BridgeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8B8953245F679100CBA22E /* BridgeBase.swift */; };
 		BE8B8957245F68EE00CBA22E /* CompositeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8B8956245F68EE00CBA22E /* CompositeBase.swift */; };
 		BE8B895C245F6A0A00CBA22E /* DecoratorBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8B895B245F6A0A00CBA22E /* DecoratorBase.swift */; };
@@ -103,6 +106,11 @@
 		BE6CAD76249107C6008FA0E1 /* MementoConceptual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoConceptual.swift; sourceTree = "<group>"; };
 		BE6CAD78249107D2008FA0E1 /* MementoRealWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoRealWorld.swift; sourceTree = "<group>"; };
 		BE6CAD7A249109C2008FA0E1 /* Memento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Memento.png; sourceTree = "<group>"; };
+		BE6CAD8024910E8A008FA0E1 /* Observer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Observer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE6CAD8424910E8A008FA0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE6CAD8A24910F70008FA0E1 /* ObserverConceptual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverConceptual.swift; sourceTree = "<group>"; };
+		BE6CAD8C24910F7A008FA0E1 /* ObserverRealWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverRealWorld.swift; sourceTree = "<group>"; };
+		BE6CAD8E24911476008FA0E1 /* Observer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Observer.png; sourceTree = "<group>"; };
 		BE8B8953245F679100CBA22E /* BridgeBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeBase.swift; sourceTree = "<group>"; };
 		BE8B8956245F68EE00CBA22E /* CompositeBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeBase.swift; sourceTree = "<group>"; };
 		BE8B895B245F6A0A00CBA22E /* DecoratorBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorBase.swift; sourceTree = "<group>"; };
@@ -204,6 +212,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BE6CAD692491059D008FA0E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6CAD7D24910E8A008FA0E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -357,6 +372,7 @@
 				BE2FF2F72484451200EF1317 /* Iterator */,
 				BEA3166024883CB4000D5282 /* Mediator */,
 				BE6CAD6D2491059D008FA0E1 /* Memento */,
+				BE6CAD8124910E8A008FA0E1 /* Observer */,
 				BE43C69A240C1ECB00035782 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -381,6 +397,7 @@
 				BE2FF2F62484451200EF1317 /* Iterator.xctest */,
 				BEA3165F24883CB4000D5282 /* Mediator.xctest */,
 				BE6CAD6C2491059D008FA0E1 /* Memento.xctest */,
+				BE6CAD8024910E8A008FA0E1 /* Observer.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -534,6 +551,33 @@
 			isa = PBXGroup;
 			children = (
 				BE6CAD78249107D2008FA0E1 /* MementoRealWorld.swift */,
+			);
+			path = RealWorld;
+			sourceTree = "<group>";
+		};
+		BE6CAD8124910E8A008FA0E1 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				BE6CAD8424910E8A008FA0E1 /* Info.plist */,
+				BE6CAD8E24911476008FA0E1 /* Observer.png */,
+				BE6CAD8824910F50008FA0E1 /* Conceptual */,
+				BE6CAD8924910F57008FA0E1 /* RealWorld */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
+		BE6CAD8824910F50008FA0E1 /* Conceptual */ = {
+			isa = PBXGroup;
+			children = (
+				BE6CAD8A24910F70008FA0E1 /* ObserverConceptual.swift */,
+			);
+			path = Conceptual;
+			sourceTree = "<group>";
+		};
+		BE6CAD8924910F57008FA0E1 /* RealWorld */ = {
+			isa = PBXGroup;
+			children = (
+				BE6CAD8C24910F7A008FA0E1 /* ObserverRealWorld.swift */,
 			);
 			path = RealWorld;
 			sourceTree = "<group>";
@@ -958,6 +1002,23 @@
 			productReference = BE6CAD6C2491059D008FA0E1 /* Memento.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BE6CAD7F24910E8A008FA0E1 /* Observer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE6CAD8524910E8A008FA0E1 /* Build configuration list for PBXNativeTarget "Observer" */;
+			buildPhases = (
+				BE6CAD7C24910E8A008FA0E1 /* Sources */,
+				BE6CAD7D24910E8A008FA0E1 /* Frameworks */,
+				BE6CAD7E24910E8A008FA0E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Observer;
+			productName = Observer;
+			productReference = BE6CAD8024910E8A008FA0E1 /* Observer.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BE8B8960245F757F00CBA22E /* Proxy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE8B8966245F757F00CBA22E /* Build configuration list for PBXNativeTarget "Proxy" */;
@@ -1165,6 +1226,10 @@
 						CreatedOnToolsVersion = 11.5;
 						LastSwiftMigration = 1150;
 					};
+					BE6CAD7F24910E8A008FA0E1 = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
 					BE8B8960245F757F00CBA22E = {
 						CreatedOnToolsVersion = 11.4.1;
 						LastSwiftMigration = 1140;
@@ -1236,6 +1301,7 @@
 				BE2FF2F52484451200EF1317 /* Iterator */,
 				BEA3165E24883CB4000D5282 /* Mediator */,
 				BE6CAD6B2491059D008FA0E1 /* Memento */,
+				BE6CAD7F24910E8A008FA0E1 /* Observer */,
 			);
 		};
 /* End PBXProject section */
@@ -1294,6 +1360,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE6CAD7B249109C2008FA0E1 /* Memento.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6CAD7E24910E8A008FA0E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6CAD8F24911476008FA0E1 /* Observer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1442,6 +1516,15 @@
 			files = (
 				BE6CAD79249107D2008FA0E1 /* MementoRealWorld.swift in Sources */,
 				BE6CAD77249107C6008FA0E1 /* MementoConceptual.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6CAD7C24910E8A008FA0E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6CAD8D24910F7A008FA0E1 /* ObserverRealWorld.swift in Sources */,
+				BE6CAD8B24910F70008FA0E1 /* ObserverConceptual.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2510,6 +2593,144 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = DmitryPolurezov.Memento;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE6CAD8624910E8A008FA0E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 43PB76C2UN;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Observer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = DmitryPolurezov.Observer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE6CAD8724910E8A008FA0E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 43PB76C2UN;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Observer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = DmitryPolurezov.Observer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -3971,6 +4192,15 @@
 			buildConfigurations = (
 				BE6CAD712491059D008FA0E1 /* Debug */,
 				BE6CAD722491059D008FA0E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE6CAD8524910E8A008FA0E1 /* Build configuration list for PBXNativeTarget "Observer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6CAD8624910E8A008FA0E1 /* Debug */,
+				BE6CAD8724910E8A008FA0E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

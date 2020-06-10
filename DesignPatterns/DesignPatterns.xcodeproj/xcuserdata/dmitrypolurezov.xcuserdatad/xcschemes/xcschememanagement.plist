@@ -74,6 +74,11 @@
 			<key>orderHint</key>
 			<integer>16</integer>
 		</dict>
+		<key>Observer.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
 		<key>Prototype.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -118,6 +123,16 @@
 			<true/>
 		</dict>
 		<key>BE43C6BD240C1EF500035782</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BE6CAD6B2491059D008FA0E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BE6CAD7F24910E8A008FA0E1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

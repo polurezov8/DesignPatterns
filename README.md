@@ -257,3 +257,18 @@ When should you use this pattern?
 See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Memento/Memento.png)
+
+## Observer
+
+What is it?
+* The observer pattern allows one object to register to receive notifications about changes in another object without needing to depend on the implementation of that object.
+
+What are the benefits? 
+* This pattern simplifies application design by allowing objects that provide notifications to do so in a uniform way without needing to know how those notifications are processed and acted on by the recipients.
+
+When should you use this pattern? 
+* Use this pattern whenever one object needs to receive notifications about changes in another object but where the sender of the notifications does not depend on the recipient to complete its work.
+
+See also the UML class and sequence diagram below.
+
+![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Observer/Observer.png)

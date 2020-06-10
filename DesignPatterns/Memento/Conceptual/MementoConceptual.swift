@@ -40,12 +40,12 @@ class Originator {
     }
 
     /// Сохраняет текущее состояние внутри снимка.
-    func save() -> Memento {
+    func save() -> MementoType {
         return ConcreteMemento(state: state)
     }
 
     /// Восстанавливает состояние Создателя из объекта снимка.
-    func restore(memento: Memento) {
+    func restore(memento: MementoType) {
         guard let memento = memento as? ConcreteMemento else { return }
         self.state = memento.state
         debugPrint("Originator: My state has changed to: \(state)")
@@ -54,13 +54,13 @@ class Originator {
 
 /// Интерфейс Снимка предоставляет способ извлечения метаданных снимка, таких
 /// как дата создания или название. Однако он не раскрывает состояние Создателя.
-protocol Memento {
+protocol MementoType {
     var name: String { get }
     var date: Date { get }
 }
 
 /// Конкретный снимок содержит инфраструктуру для хранения состояния Создателя.
-class ConcreteMemento: Memento {
+class ConcreteMemento: MementoType {
 
     /// Создатель использует этот метод, когда восстанавливает своё состояние.
     private(set) var state: String
@@ -82,7 +82,7 @@ class ConcreteMemento: Memento {
 /// всеми снимками через базовый интерфейс Снимка.
 class Caretaker {
 
-    private lazy var mementos: [Memento] = []
+    private lazy var mementos: [MementoType] = []
     private var originator: Originator
 
     init(originator: Originator) {
