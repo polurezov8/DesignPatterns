@@ -272,3 +272,18 @@ When should you use this pattern?
 See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Observer/Observer.png)
+
+## State
+
+What is it?
+* State is a behavioral design pattern that lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.
+
+What are the benefits? 
+* The State pattern suggests that you create new classes for all possible states of an object and extract all state-specific behaviors into these classes. Instead of implementing all behaviors on its own, the original object, called context, stores a reference to one of the state objects that represents its current state, and delegates all the state-related work to that object.
+
+When should you use this pattern? 
+* Use this pattern to encapsulate varying behavior for the same object, based on its internal state. This can be a cleaner way for an object to change its behavior at runtime without resorting to conditional statements and thus improve maintainability.
+
+See also the UML class and sequence diagram below.
+
+![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/State/State.png)
