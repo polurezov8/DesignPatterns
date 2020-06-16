@@ -1,7 +1,10 @@
-# Patterns
+# Design Patterns
+
+## Design Patterns Card
+![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/PatternsCard/DesignPatternsCard.pdf)
 
 ## Creation Patterns
-## Factory Method
+### Factory Method
 
 What is it? 
 * The factory method pattern selects an implementation class to satisfy a calling component’s request without requiring the component to know anything about the implementation classes or the way they relate to one another.
@@ -16,7 +19,7 @@ See also the UML class diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/FactoryMethod/FactoryMethod.png)
 
-## Abstract Factory
+### Abstract Factory
 
 What is it? 
 * The abstract factory pattern allows a calling component to create a group of related objects. The pattern hides the details of which classes are used to create the objects and the reason why they were selected from the calling component.
@@ -31,7 +34,7 @@ See also the UML class diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/AbstractFactory/AbstractFactory.png)
 
-## Builder
+### Builder
 
 What is it? 
 * The builder pattern puts the logic and default configuration values required to create an object into a builder class. This allows calling components to create objects with minimal configuration data and without needing to know the default values that will be used to create the object.
@@ -46,7 +49,7 @@ See also the UML class diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Builder/Builder.png)
 
-## Prototype
+### Prototype
 
 What is it? 
 * The prototype pattern creates new objects by copying an existing object, known as the prototype.
@@ -61,7 +64,7 @@ See also the UML class diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Prototype/Prototype.gif)
 
-## Singleton
+### Singleton
 
 What is it? 
 * The singleton pattern ensures that only one object of a given type exists in the application.
@@ -77,7 +80,7 @@ See also the UML class diagram below.
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Singleton/Singleton.png)
 
 ## Structural Patterns
-## Adapter
+### Adapter
 
 What is it? 
 * The adapter pattern allows two components with incompatible APIs to work together by introducing an adapter that maps from one component to the other.
@@ -92,7 +95,7 @@ See also the UML class diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Adapter/Adapter.png)
 
-## Bridge
+### Bridge
 
 What is it? 
 * The bridge pattern separates an abstraction from its implementation so that either can be changed without a corresponding change in the other. 
@@ -107,7 +110,7 @@ See also the UML class diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Bridge/Bridge.png)
 
-## Composite
+### Composite
 
 What is it? 
 * The composite pattern allows a tree of individual objects and collections of objects to be treated consistently. 
@@ -122,7 +125,7 @@ See also the UML class diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Composite/Composite.png)
 
-## Decorator
+### Decorator
 
 What is it? 
 * The decorator pattern allows the behavior of individual objects to be changed without requiring changes to the classes that are used to create them or the components that consume them. 
@@ -137,7 +140,7 @@ See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Decorator/Decorator.png)
 
-## Facade
+### Facade
 
 What is it?
 * The facade pattern simplifies the use of complex APIs to perform common tasks.
@@ -152,7 +155,7 @@ See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Facade/Facade.png)
 
-## Proxy
+### Proxy
 
 What is it?
 * The proxy pattern defines an object—the proxy—that represents some other resource, such as another object or a remote service. Calling components operate on the proxy, which in turn operates on the underlying resource.
@@ -167,7 +170,7 @@ See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Proxy/Proxy.png)
 
-## Flyweight
+### Flyweight
 
 What is it?
 * The flyweight pattern shares common data objects between multiple calling components.
@@ -182,7 +185,8 @@ See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Flyweight/Flyweight.png)
 
-## Chain Of Responsibility
+## Behavioral patterns
+### Chain Of Responsibility
 
 What is it?
 * The chain of responsibility pattern organizes sequentially a set of objects that may be able to take responsibility for a request from a calling component. The sequence of objects is referred to as a chain, and each object in the chain is asked to take responsibility for the request. The request moves along the chain until one of the objects takes responsibility or the end of the chain is reached.
@@ -197,7 +201,7 @@ See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/ChainOfResponsibility/ChainOfResponsibility.png)
 
-## Command
+### Command
 
 What is it?
 * The command pattern is used to encapsulate details of how to invoke a method on an object in a way that allows the method to be invoked at a different time or by a different component.
@@ -212,7 +216,7 @@ See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Command/Command.png)
 
-## Iterator
+### Iterator
 
 What is it?
 * In object-oriented programming, the iterator pattern is a design pattern in which an iterator is used to traverse a container and access the container's elements. The iterator pattern decouples algorithms from containers; in some cases, algorithms are necessarily container-specific and thus cannot be decoupled.
@@ -228,7 +232,7 @@ See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Iterator/Iterator.png)
 
-## Mediator
+### Mediator
 
 What is it?
 * The mediator pattern simplifies peer-to-peer communication between objects by introducing a mediator object that acts as a communications broker between the objects.
@@ -243,7 +247,7 @@ See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Mediator/Mediator.png)
 
-## Memento
+### Memento
 
 What is it?
 * The memento pattern captures the complete state of an object into a memento that can be used to reset the object at a later date.
@@ -258,7 +262,7 @@ See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Memento/Memento.png)
 
-## Observer
+### Observer
 
 What is it?
 * The observer pattern allows one object to register to receive notifications about changes in another object without needing to depend on the implementation of that object.
@@ -273,7 +277,7 @@ See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Observer/Observer.png)
 
-## State
+### State
 
 What is it?
 * State is a behavioral design pattern that lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.
@@ -288,7 +292,7 @@ See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/State/State.png)
 
-## Strategy
+### Strategy
 
 What is it?
 * The strategy pattern is used to create classes that can be extended without modification, through the application of algorithm objects that conform to a well-defined protocol.
@@ -303,7 +307,7 @@ See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Strategy/Strategy.png)
 
-## Template Method
+### Template Method
 
 What is it?
 * The template method pattern allows specific steps in an algorithm to be replaced by implementations provided by a third-party, either by specifying functions as closures or by creating a subclass.
@@ -318,7 +322,7 @@ See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/TemplateMethod/TemplateMethod.png)
 
-## Visitor
+### Visitor
 
 What is it?
 * The visitor pattern allows new algorithms to operate on collections of heterogeneous objects without needing to modify or subclass the collection class.
