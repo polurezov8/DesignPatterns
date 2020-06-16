@@ -1,8 +1,5 @@
 # Design Patterns
 
-## Design Patterns Card
-![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/PatternsCard/DesignPatternsCard.pdf)
-
 ## Creation Patterns
 ### Factory Method
 
