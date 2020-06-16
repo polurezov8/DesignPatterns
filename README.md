@@ -287,3 +287,48 @@ When should you use this pattern?
 See also the UML class and sequence diagram below.
 
 ![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/State/State.png)
+
+## Strategy
+
+What is it?
+* The strategy pattern is used to create classes that can be extended without modification, through the application of algorithm objects that conform to a well-defined protocol.
+
+What are the benefits? 
+* The strategy pattern allows third-party developers to change the behavior of classes without modifying them and can allow low-cost changes to be made in projects that have expensive and lengthy validation procedures for specific classes.
+
+When should you use this pattern? 
+* Use this pattern when you need classes that can be extended without being modified.
+
+See also the UML class and sequence diagram below.
+
+![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Strategy/Strategy.png)
+
+## Template Method
+
+What is it?
+* The template method pattern allows specific steps in an algorithm to be replaced by implementations provided by a third-party, either by specifying functions as closures or by creating a subclass.
+
+What are the benefits?
+* This pattern is useful when you are writing frameworks that you want to allow other developers to extend and customize.
+
+When should you use this pattern? 
+*  Use this pattern to selectively permit steps in any algorithm to be changed without modifying the original class.
+
+See also the UML class and sequence diagram below.
+
+![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/TemplateMethod/TemplateMethod.png)
+
+## Visitor
+
+What is it?
+* The visitor pattern allows new algorithms to operate on collections of heterogeneous objects without needing to modify or subclass the collection class.
+
+What are the benefits?
+* The visitor pattern is useful when you want to provide collection classes as part of frameworks without requiring third-party developers to modify the source code. This pattern is also useful in projects where modifying core classes triggers expensive testing procedures.
+
+When should you use this pattern? 
+*   Use this pattern when you have classes that manage collections of mismatched objects and you want to perform operations on them.
+
+See also the UML class and sequence diagram below.
+
+![](https://github.com/polurezov8/Patterns/blob/master/DesignPatterns/Visitor/Visitor.png)
