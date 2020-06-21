@@ -1,6 +1,6 @@
 # Design Patterns
 
-## Creation Patterns
+## Creational Patterns
 ### Factory Method
 
 What is it? 
